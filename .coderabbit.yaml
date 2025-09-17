@@ -1,0 +1,20 @@
+# .coderabbit.yaml
+# Configuration for CodeRabbit path filters
+
+path_filters:
+  include:
+    # Explicitly include lockfiles so they are reviewed
+    - "**/pnpm-lock.yaml"
+    - "**/package-lock.json"
+    - "**/yarn.lock"
+
+  exclude:
+    # Still ignore common noisy or auto-generated files
+    - "**/dist/**"
+    - "**/build/**"
+    - "**/coverage/**"
+    - "**/*.min.js"
+    - "**/*.min.css"
+    - "**/.next/**"
+    - "**/.nuxt/**"
+    - "**/.turbo/**"
