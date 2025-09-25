@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google"
 import { ClerkProvider } from '@clerk/nextjs'
-
 import "@workspace/ui/globals.css"
 import { Providers } from "@/components/providers"
 
@@ -26,7 +25,7 @@ export default function RootLayout({
       >
         <ClerkProvider>
           <Providers>
-            {children}
+              {children}
           </Providers>
         </ClerkProvider>
       </body>
