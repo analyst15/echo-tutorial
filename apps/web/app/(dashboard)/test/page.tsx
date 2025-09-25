@@ -1,7 +1,7 @@
 const Page = () => {
     return ( 
         <div>
-            Test Page
+            only org selection page
         </div>
      );
 }
